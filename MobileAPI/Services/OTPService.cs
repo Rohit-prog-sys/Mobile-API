@@ -43,7 +43,7 @@ public class OTPService
     public async Task<(bool Success, string Message)> VerifyOtpAsync(string mobile, string otp)
     {
         var data = await _repo.GetValidOtpAsync(mobile);
-
+        //swati
         if (data == null)
         {
             return (false, "OTP not found");

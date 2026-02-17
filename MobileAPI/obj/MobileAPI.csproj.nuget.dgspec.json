@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MobileAPI\\MobileAPI\\MobileAPI\\MobileAPI.csproj": {}
+    "D:\\MobileAPI\\Mobile-API\\MobileAPI\\MobileAPI.csproj": {}
   },
   "projects": {
-    "D:\\MobileAPI\\MobileAPI\\MobileAPI\\MobileAPI.csproj": {
+    "D:\\MobileAPI\\Mobile-API\\MobileAPI\\MobileAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\MobileAPI\\MobileAPI.csproj",
+        "projectUniqueName": "D:\\MobileAPI\\Mobile-API\\MobileAPI\\MobileAPI.csproj",
         "projectName": "MobileAPI",
-        "projectPath": "D:\\MobileAPI\\MobileAPI\\MobileAPI\\MobileAPI.csproj",
+        "projectPath": "D:\\MobileAPI\\Mobile-API\\MobileAPI\\MobileAPI.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MobileAPI\\MobileAPI\\MobileAPI\\obj\\",
+        "outputPath": "D:\\MobileAPI\\Mobile-API\\MobileAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

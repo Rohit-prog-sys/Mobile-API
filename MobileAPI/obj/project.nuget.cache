@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "al1jbFZt7HQ=",
+  "dgSpecHash": "7UtZvk/g/2Q=",
   "success": true,
-  "projectFilePath": "D:\\MobileAPI\\MobileAPI\\MobileAPI\\MobileAPI.csproj",
+  "projectFilePath": "D:\\MobileAPI\\Mobile-API\\MobileAPI\\MobileAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
