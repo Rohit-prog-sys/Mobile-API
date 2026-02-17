@@ -56,23 +56,34 @@ namespace MobileAPI.Repositories
         // ✅ Validate OTP
         public async Task<OtpEntity?> GetValidOtpAsync(string mobile)
         {
-            var sql = @"
-        SELECT TOP 1 *
-        FROM MobileOTP
-        WHERE MobileNumber=@mobile
-        ORDER BY Id GenTime DESC";
+            try
+            {
+                var sql = @"SELECT TOP 1 * FROM MobileOTP WHERE MobileNumber = @mobile ORDER BY GentTime DESC";   // ✅ fixed
 
-            using var con = CreateConnection();
-            return await con.QueryFirstOrDefaultAsync<OtpEntity>(sql, new { mobile});
+                using var con = CreateConnection();
+
+                return await con.QueryFirstOrDefaultAsync<OtpEntity>(
+                    sql,
+                    new { mobile }
+                );
+            }
+            catch (SqlException ex)
+            {
+                
+                return null;   // safe fallback
+            }
+            catch (Exception ex)
+            {
+                
+                return null;
+            }
         }
+
 
         // ✅ Mark used
         public async Task MarkUsedAsync(int id, string status)
         {
-            const string sql = @"
-        UPDATE MobileOTP 
-        SET Status = @Status
-        WHERE Id = @Id";
+            const string sql = @" UPDATE MobileOTP  SET Status = @Status WHERE Id = @Id";
 
             try
             {

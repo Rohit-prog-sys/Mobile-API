@@ -30,7 +30,7 @@ namespace MobileAPI.Controllers
         {
             //var ip = HttpContext.Connection.RemoteIpAddress?.ToString();
 
-            await _service.GenerateAsync(request.MobileNo, request.Ip);
+            await _service.GenerateAsync(request.MobileNo, request.DeviceID);
 
             return Ok(new OTPDetailsResponseDto
             {

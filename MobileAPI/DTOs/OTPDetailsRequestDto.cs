@@ -4,7 +4,7 @@
     {
         public string MobileNo { get; set; }
         public string Otp { get; set; }
-        public string Ip { get; set; }
+        public string DeviceID { get; set; }
     }
 
 }
